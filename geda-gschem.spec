@@ -10,7 +10,7 @@ Source0:	http://www.geda.seul.org/devel/%{version}/%{name}-%{version}.tar.gz
 URL:		http://www.geda.seul.org/
 BuildRequires:	XFree86-devel
 BuildRequires:	glib2-devel >= 2.2.0
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	guile-devel >= 1.4
 BuildRequires:	libgdgeda-devel
 BuildRequires:	libgeda-devel >= %{version}

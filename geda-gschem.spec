@@ -45,6 +45,7 @@ install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 install examples/*.sch	$RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 %find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -52,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %postun
-[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)

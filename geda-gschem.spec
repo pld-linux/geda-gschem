@@ -47,9 +47,6 @@ install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 install examples/*.sch	$RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 %find_lang %{name}
-
-gzip -9nf AUTHORS BUGS ChangeLog README TODO VOCAB*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -61,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS BUGS ChangeLog README TODO VOCAB*
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/gEDA/bitmap/gschem*

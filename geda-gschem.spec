@@ -1,8 +1,8 @@
 Summary:	Electronics schematics editor
 Summary(pl):	Edytor schematów elektronicznych
 Name:		geda-gschem
-Version:	20050820
-Release:	1
+Version:	20061020
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.geda.seul.org/devel/%{version}/%{name}-%{version}.tar.gz

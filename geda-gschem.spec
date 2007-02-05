@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.geda.seul.org/devel/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	8ac2387999ec98016c3b004c95fab424
+# Source0-md5:	c00d1692984d4fc89476beded6c2d571
 URL:		http://www.geda.seul.org/
 BuildRequires:	XFree86-devel
 BuildRequires:	glib2-devel >= 2.2.0

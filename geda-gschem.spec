@@ -1,5 +1,5 @@
 Summary:	Electronics schematics editor
-Summary(pl):	Edytor schematów elektronicznych
+Summary(pl.UTF-8):   Edytor schematÃ³w elektronicznych
 Name:		geda-gschem
 Version:	20061020
 Release:	0.1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Gschem is an electronics schematic editor. It is part of the gEDA
 project.
 
-%description -l pl
-Gschem to edytor schematów elektronicznych. Czê¶æ projektu gEDA.
+%description -l pl.UTF-8
+Gschem to edytor schematÃ³w elektronicznych. CzÄ™Å›Ä‡ projektu gEDA.
 
 %prep
 %setup -q

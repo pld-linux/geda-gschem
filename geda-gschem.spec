@@ -1,5 +1,5 @@
 Summary:	Electronics schematics editor
-Summary(pl.UTF-8):   Edytor schematów elektronicznych
+Summary(pl.UTF-8):	Edytor schematów elektronicznych
 Name:		geda-gschem
 Version:	20061020
 Release:	0.1

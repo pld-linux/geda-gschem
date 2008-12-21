@@ -1,12 +1,12 @@
 Summary:	Electronics schematics editor
 Summary(pl.UTF-8):	Edytor schematów elektronicznych
 Name:		geda-gschem
-Version:	1.4.0
+Version:	1.4.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.geda.seul.org/release/v1.4/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	f09144055957e894af7c74ea01b19265
+# Source0-md5:	02a426cb537860bdf66d7c9b91cb7e04
 URL:		http://www.geda.seul.org/
 BuildRequires:	glib2-devel >= 2.2.0
 BuildRequires:	gtk+2-devel >= 2:2.2.0
@@ -31,7 +31,8 @@ Gschem to edytor schematów elektronicznych. Część projektu gEDA.
 %setup -q
 
 %build
-%configure
+%configure \
+	--disable-update-desktop-database
 %{__make}
 
 %install
@@ -45,6 +46,15 @@ install examples/*.sch	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 # there is no reason to package gschem _source code_ documentation
 rm -f $RPM_BUILD_ROOT%{_infodir}/gschemdoc*
+
+mv $RPM_BUILD_ROOT%{_localedir}/{nl_NL,nl}
+mv $RPM_BUILD_ROOT%{_localedir}/{de_DE,de}
+mv $RPM_BUILD_ROOT%{_localedir}/{es_ES,es}
+mv $RPM_BUILD_ROOT%{_localedir}/{ja_JP,ja}
+mv $RPM_BUILD_ROOT%{_localedir}/{it_IT,it}
+mv $RPM_BUILD_ROOT%{_localedir}/{fr_FR,fr}
+rm -r $RPM_BUILD_ROOT%{_localedir}/af_ZA
+
 
 %find_lang %{name}
 

@@ -47,14 +47,13 @@ install examples/*.sch	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 # there is no reason to package gschem _source code_ documentation
 rm -f $RPM_BUILD_ROOT%{_infodir}/gschemdoc*
 
-mv $RPM_BUILD_ROOT%{_localedir}/{nl_NL,nl}
+mv $RPM_BUILD_ROOT%{_localedir}/{af_ZA,af}
 mv $RPM_BUILD_ROOT%{_localedir}/{de_DE,de}
 mv $RPM_BUILD_ROOT%{_localedir}/{es_ES,es}
-mv $RPM_BUILD_ROOT%{_localedir}/{ja_JP,ja}
-mv $RPM_BUILD_ROOT%{_localedir}/{it_IT,it}
 mv $RPM_BUILD_ROOT%{_localedir}/{fr_FR,fr}
-rm -r $RPM_BUILD_ROOT%{_localedir}/af_ZA
-
+mv $RPM_BUILD_ROOT%{_localedir}/{it_IT,it}
+mv $RPM_BUILD_ROOT%{_localedir}/{ja_JP,ja}
+mv $RPM_BUILD_ROOT%{_localedir}/{nl_NL,nl}
 
 %find_lang %{name}
 

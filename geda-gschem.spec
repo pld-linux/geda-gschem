@@ -8,9 +8,11 @@ Group:		X11/Applications
 Source0:	http://www.geda.seul.org/release/v1.4/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	02a426cb537860bdf66d7c9b91cb7e04
 URL:		http://www.geda.seul.org/
+BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 2.2.0
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	guile-devel >= 1.4
+BuildRequires:	intltool
 #BuildRequires:	libgdgeda-devel
 BuildRequires:	libgeda-devel >= %{version}
 BuildRequires:	libstroke-devel >= 0.4
